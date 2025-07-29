@@ -1,0 +1,184 @@
+:root{
+    --root-primary:#005eea;
+    --root-seconder:#005eea74;
+    --root-tertiary:#f2f2f2;
+    --root-accent:#000000;
+}
+/*
+#211c84
+#4d55cc
+#7a73d1
+#b5a8d5
+
+#005eea
+
+#b6b09f
+#eae4d5
+#f2f2f2
+#000000
+*/prathmeshhalande1
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("freepik__upload__95806.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  font-family: Roboto, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#Box1{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 65vw;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+#Box0{
+    position: relative;
+    display: flex;
+    width: 30vw;
+    height: 72vh;
+    justify-content: end;
+    left: 9%;
+    border-radius: 5vh;
+   background: rgba(252, 252, 253, 0.169);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.loginBox{
+    width: 100%;
+    height: 100%;
+    padding: 15% 10%;
+    border: black solid 1px;
+    border-radius: 5vh;
+    position: absolute;
+    z-index: 1;
+}
+.signupBox{
+    width: 100%;
+    height: 100%;
+    padding: 15% 10%;
+    border: black solid 1px;
+    border-radius: 5vh;
+    z-index: 2;
+    position: absolute;
+    
+}
+ 
+.active{
+    pointer-events: all;
+    opacity: 1;
+}    
+.unactive{
+    pointer-events: none;
+    opacity: 0;
+}
+#loginButtonBox{ 
+    z-index: 3;
+    position: absolute;
+    width: 18vw;
+    height: 31vh;
+    left: 56%;
+
+}
+#signupButtonBox{
+    position: absolute;
+  width: 18vw;
+  height: 31vh;
+  top: 50%;
+  transform: translate(36%, -50%);
+  z-index: 3;
+}
+.loginBox, .signupBox {
+  transition: opacity 1s ease, pointer-events 0.5s ease;
+background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.sltext{
+    font-size: 6vh;
+    text-align: center;
+}
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset !important;
+  -webkit-text-fill-color: #000000 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.buttonWrapper {
+  display: inline-block;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 6.5vh;
+  width: 8.5vw;
+  border: none;
+  border-radius: 5vh;
+  background-color: transparent;
+  border: #000000 solid 1px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1vw;
+  z-index: 1;
+  transform: translateY(45%);
+}
+
+.buttonText {
+  position: relative;
+  z-index: 2;
+}
+
+.hover-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 500%;
+  background-color: var(--root-accent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.input{
+    border: none;
+    background-color: #00000000;
+    height: 6.7vh;
+    width: 100%;
+    border-bottom: #000000 solid 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: larger;
+    outline: none;
+}
+
+.boxOfInput{
+    height: 6.7vh;
+    width: 88%;
+    margin: 4%;
+    position: relative;
+
+}

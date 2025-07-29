@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntervAI</title>
+  <link rel="shortcut icon" href="/
+    " type="image/x-icon">
+  <link rel="stylesheet" href="/stylesheet/login.css">
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/gsap/dist/gsap.min.js"></script>
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script-->
+
+</head>
+
+<body>
+  <div id="cursor"></div>
+  <div id="Box1">
+    <div id="Box0">
+      <div class="signupBox active">
+        <form action="/create" method="post">
+
+          <div class="boxOfInput">
+            <h3><label for="signupEmail" class="signupLable labelInput" id="signupEmailLabel">Email</label></h3>
+            <input type="email" autocomplete="off" name="email" id="signupEmail" class="signupInput input"> <br>
+            <div id="line1" class="line"></div>
+          </div>
+
+          <div class="boxOfInput">
+            <h3><label for="signupName" class="signupLable labelInput" id="signupNameLable ">Username</label></h3>
+            <input type="text" autocomplete="given-name" name="username" id="signupName" class="signupInput input"> <br>
+            <div id="line2" class="line"></div>
+          </div>
+
+          <div class="boxOfInput">
+            <h3><label for="signupPassword" class="signupLable labelInput" id="signupPasswordLable">Password</label></h3>
+            <input type="password" name="password" autocomplete="off" id="signupPassword" class="signupInput input">
+            <br>
+            <div id="line3" class="line"></div>
+          </div>
+
+          <div class="boxOfInput">
+            <h3><label for="signupConfirmPassword" class="signupLable labelInput" id="signupConfirmPasswordLable">Confirm
+                  Password</label></h3>
+            <input type="password" name="confirmPassword" autocomplete="off" id="signupConfirmPassword"
+              class="signupInput input"> <br>
+            <div id="line4" class="line"></div>
+          </div>
+
+          
+            <div class="buttonWrapper">
+              <button class="button b2" id="signup" type="submit">
+                <span class="buttonText">Signup</span>
+                <div class="hover-circle"></div>
+              </button>
+            </div>
+          
+
+        </form>
+      </div>
+      <div class="loginBox unactive">
+        <form action="/createprofile" id="loginForm" method="post">
+
+          <div class="boxOfInput">
+            <h3><label for="loginUsername" class="labelInput">username</label></h3> <input type="text" class="input" autocomplete="given-name"
+              name="username" id="loginUsername"> <br>
+            <div id="line4" class="line"></div>
+          </div>
+
+          <div class="boxOfInput">
+            <h3><label for="loginPassword" class="labelInput">password</label></h3> <input type="password"
+              autocomplete="current-password" name="password" id="loginPassword" class="input"> <br>
+            <div id="line4" class="line"></div>
+          </div>
+
+          
+            <div class="buttonWrapper">
+              <button class="button b1" id="login" type="submit">
+                <span class="buttonText">Login</span>
+                <div class="hover-circle"></div>
+              </button>
+            </div>
+          
+
+        </form>
+      </div>
+    </div>
+    <div id="loginButtonBox" class="action">
+      <div class="logintext sltext">Welcome Back <br>Let Login</div>
+      <center>
+        <div class="buttonWrapper">
+          <button class="button b1" id="loginButton">
+            <span class="buttonText">Login</span>
+            <div class="hover-circle"></div>
+          </button>
+        </div>
+      </center>
+    </div>
+    <div id="signupButtonBox" class="unactive">
+      <div class="logintext sltext">Welcome! Let's <br>go to Signup</div>
+      <center>
+        <div class="buttonWrapper">
+          <button class="button b2" id="signupButton">
+            <span class="buttonText">Signup</span>
+            <div class="hover-circle"></div>
+          </button>
+        </div>
+      </center>
+
+    </div>
+  </div>
+  <script src="javascript/login.js"></script>
+  <script src="javascript/gsap/loginGsap.js"></script>
+</body>
+
+</html>
