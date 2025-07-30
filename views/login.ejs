@@ -29,8 +29,8 @@
           </div>
 
           <div class="boxOfInput">
-            <h3><label for="signupName" class="signupLable labelInput" id="signupNameLable ">Username</label></h3>
-            <input type="text" autocomplete="given-name" name="username" id="signupName" class="signupInput input"> <br>
+            <h3><label for="signupName" class="signupLable labelInput i1" id="signupNameLable ">Username</label></h3>
+            <input type="text" autocomplete="given-name" name="username" id="signupNames" class="signupInput input"> <br>
             <div id="line2" class="line"></div>
           </div>
 
@@ -64,13 +64,13 @@
         <form action="/createprofile" id="loginForm" method="post">
 
           <div class="boxOfInput">
-            <h3><label for="loginUsername" class="labelInput">username</label></h3> <input type="text" class="input" autocomplete="given-name"
+            <h3><label for="loginUsername" class="labelInput" id="loginEmailLabel">username</label></h3> <input type="text" class="input" autocomplete="given-name"
               name="username" id="loginUsername"> <br>
             <div id="line4" class="line"></div>
           </div>
 
           <div class="boxOfInput">
-            <h3><label for="loginPassword" class="labelInput">password</label></h3> <input type="password"
+            <h3><label for="loginPassword" class="labelInput" id="loginPasswordLabel">password</label></h3> <input type="password"
               autocomplete="current-password" name="password" id="loginPassword" class="input"> <br>
             <div id="line4" class="line"></div>
           </div>
@@ -92,14 +92,14 @@
       <center>
         <div class="buttonWrapper">
           <button class="button b1" id="loginButton">
-            <span class="buttonText">Login</span>
+            <span class="buttonText bw">Login</span>
             <div class="hover-circle"></div>
           </button>
         </div>
       </center>
     </div>
     <div id="signupButtonBox" class="unactive">
-      <div class="logintext sltext">Welcome! Let's <br>go to Signup</div>
+      <div class="signuptext sltext">Welcome! Let's <br>go to Signup</div>
       <center>
         <div class="buttonWrapper">
           <button class="button b2" id="signupButton">

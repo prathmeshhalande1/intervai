@@ -105,7 +105,6 @@ $(document).ready(() => {
 
   $(".burgar").click(() => {
     if (con) {
-      $(".navlocation").css("display", "block")
       gsap.to(".line1", {
         transformOrigin: "20% 20%",
         rotation: 45,
@@ -116,10 +115,14 @@ $(document).ready(() => {
         rotation: -45,
         direction: 1
       })
-
+      gsap.to(".line3", {
+       y: "152px",
+        rotation: 0,
+        direction: 1
+      })
+      $(".navlocation").css("display", "block")
       con = false
     } else {
-      $(".navlocation").css("display", "none")
 
       gsap.to(".line1", {
         transformOrigin: "20% 20%",
@@ -131,6 +134,13 @@ $(document).ready(() => {
         rotation: 0,
         direction: 1
       })
+       gsap.to(".line3", {
+        y: "0px",
+        rotation: 0,
+        direction: 1
+      })
+            $(".navlocation").css("display", "none")
+
       con = true
     }
   })

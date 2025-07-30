@@ -90,28 +90,46 @@ function animetion2() {
       $("#signupEmailLabel").show(); 
     }
   });
-   $("#signupName").on('input', function () {
-    let a = $("#signupName").val();
-    if (a != "") {
-      $("#signupNameLable").hide(); 
-    } else {
-      $("#signupNameLable").show(); 
-    }
-  });
-   $("#signupPassword").on('input', function () {
+  $("#signupPassword").on('input', function () {
     let a = $("#signupPassword").val();
     if (a != "") {
-      $("#signupPasswordLabl").hide(); 
+      $("#signupPasswordLable").hide(); 
     } else {
-      $("#signupPasswordLabl").show(); 
+      $("#signupPasswordLable").show(); 
     }
   });
-   $("#signupConfirmPasswordLable").on('input', function () {
-    let a = $("#signupConfirmPasswordLable").val();
+  $("#signupConfirmPassword").on('input', function () {
+    let a = $("#signupConfirmPassword").val();
     if (a != "") {
-      $("#signupConfirmPassword").hide(); 
+      $("#signupConfirmPasswordLable").hide(); 
     } else {
-      $("#signupConfirmPassword").show(); 
+      $("#signupConfirmPasswordLable").show(); 
+    }
+  });
+  $("#loginUsername").on('input', function () {
+    let a = $("#loginUsername").val();
+    if (a != "") {
+      $("#loginEmailLabel").hide(); 
+    } else {
+      $("#loginEmailLabel").show(); 
+    }
+  });
+  $("#loginPassword").on('input', function () {
+    let a = $("#loginPassword").val();
+    if (a != "") {
+      $("#loginPasswordLabel").hide(); 
+    } else {
+      $("#loginPasswordLabel").show(); 
+    }
+  });
+
+  $("#signupNames").on('input', function () {
+    let a = $("#signupNames").val();
+    if (a != "") {
+      $(".i1").hide(); 
+      console.log("hide");
+    } else {
+      $(".i1").show(); 
     }
   });
 }

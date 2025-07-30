@@ -16,14 +16,14 @@
 #eae4d5
 #f2f2f2
 #000000
-*/prathmeshhalande1
+*/
 body {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("freepik__upload__95806.jpeg") no-repeat center center fixed;
+  background: url("20250729_1856_Light and Dark Glass_simple_compose_01k1b5n4hheh4vz0aevft9hny0.png") no-repeat center center fixed;
   background-size: cover;
   backdrop-filter: blur(2px);
   font-family: Roboto, sans-serif;
@@ -79,7 +79,14 @@ body {
     position: absolute;
     
 }
- 
+ .labelInput{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    position: absolute;
+    top: -2vh;
+    left: 0;
+    transition: all 0.3s ease-in-out;}
 .active{
     pointer-events: all;
     opacity: 1;
@@ -110,6 +117,15 @@ background: rgba(255, 255, 255, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+}
+.logintext{
+  color: #f2f2f2;
+}
+#loginButton{
+  border: #f2f2f2 solid ;
+}
+.bw{
+  color: #f2f2f2;
 }
 .sltext{
     font-size: 6vh;

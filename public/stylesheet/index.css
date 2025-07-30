@@ -579,8 +579,8 @@ body {
 .line3{
   background: linear-gradient(to right,#10b981,#8900f9,#ef5ff7,#f79102,#ff6464,#ffc6ec,#f700ff,#005eea);
   height: 0.6VH;
-  width: 96VW;
-  border-radius: 5px;
+  width: 100VW;
+  z-index: 1001;
 }
 .linecontainer{
   display: flex;
@@ -589,12 +589,15 @@ body {
   width: 100vw;
 }
 .navlocation{
-    display:none;
     border: #000;
     width: 96vw;
     margin-left: 2vw;
-    height: 15vh;
+    height: 150px;
    padding-top: 0.5vh;
+   position: absolute;
+   background-color: #ffffff;
+   display: none;
+   z-index: 1000;
 }
 a{
     text-decoration: none;
@@ -613,4 +616,21 @@ a{
   height: 5vh;
   width: 5vh;
   background: #000;
+}
+.navtextbox{
+  font-size: 20px;
+  color: #000;
+  height: 50px;
+  width: 100%;  
+  transition: all 0.2s ease-in-out;
+}
+.navtextbox:hover{
+transform: translateY(-26px);
+}
+
+.overflowbox{
+  overflow: hidden;
+ height: 25px;
+  width: 100%;
+  margin: 2.5px;
 }
